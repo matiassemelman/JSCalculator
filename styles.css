@@ -6,6 +6,10 @@
 body {
     margin: 0;
     padding: 0;
+    
+}
+
+button {
     font-size: 40px;
 }
 
@@ -15,7 +19,7 @@ body {
     flex-wrap: wrap;
 }
 
-.layout div {
+.layout button {
     padding-top: 25px;
     padding-bottom: 25px;
     border-right: 2px black solid;
@@ -26,12 +30,14 @@ body {
 
 .layout .result {
     font-size: 36px;
-width: 97.3%;
+width: 96.1%;
 text-align: right;
 font-family: monospace;
 background-color: black;
 color: white;
 padding-right: 5px;
+padding-top: 25px;
+padding-bottom: 25px;
 }
 
 .normal {
@@ -39,7 +45,7 @@ padding-right: 5px;
 }
 
 .c {
-    width: 49.1%;
+    width: 48.8%;
     text-align: center;
     }
 
@@ -49,10 +55,11 @@ padding-right: 5px;
     color: white;
     border-left: 1px black solid;
     border-right: 0;
+    border-top: 0;
 }
 
 .cero {
-    width: 73.9%;
+    width: 73%;
 }
 
 .normal.last {
