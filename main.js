@@ -68,7 +68,18 @@ function handleMath(value) {
     }
     previousOperator = value;
     buffer = "0";
-    
+
+}
+
+function flushOperation (intBuffer) {
+    if (previousOperator === "+") {
+        runningTotal += intBuffer;
+    } else if (previousOperator === "-") {
+        runningTotal -= intBuffer;
+} else if (previousOperator === "×") {
+    runningTotal *= intBuffer;
+} else {
+    runningTotal /= intBuffer;}
 }
 
 function rerender() {
