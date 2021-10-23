@@ -62,7 +62,7 @@ function handleSymbol(value) {
 function handleMath(value) {
     const intBuffer = parseInt(buffer);
     if (runningTotal === 0) {
-        runningTotal = buffer;
+        runningTotal = intBuffer;
     } else {
         flushOperation(intBuffer);
     }
